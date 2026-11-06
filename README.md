@@ -18,9 +18,11 @@ The context will initially include Prediction confidence, Classification loss , 
 The contextual bandit will choose from several possible actions representing different levels of
 attention guidance.For instance: No regularization , Low regularization , Medium regularization , High regularization
 
-The selected action will determine the value of k in the total loss:
-Total loss = Classification loss + k * Attention loss
+The selected action will determine the value of k in the total loss:  
+
+Total loss = Classification loss + k * Attention loss 
 where k is selected adaptively by the contextual bandit.
+
 The bandit will initially be implemented using an interpretable method such as LinUCB or
 Thompson Sampling. An initial reward function will combine classification performance and
 attention behavior.
