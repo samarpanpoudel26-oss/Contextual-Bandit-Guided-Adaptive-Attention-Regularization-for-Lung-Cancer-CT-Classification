@@ -1,5 +1,6 @@
 # Contextual-Bandit-Guided-Adaptive-Attention-Regularization-for-Lung-Cancer-CT-Classification
-# This is my ongoing research work on AI Safety
+
+This is my ongoing research work on AI Safety
 
 # Proposed Method
 I propose a Contextual Bandit Guided Adaptive Attention Regularization framework for lung
@@ -12,19 +13,10 @@ attention map will then be compared with the anatomical region mask to measure a
 outside the relevant region.
 
 The framework will use a contextual bandit to select the strength of the attention regularization.
-The context will initially include:
-● Prediction confidence
-● Classification loss
-● Attention outside the anatomical region
-● Model uncertainty
-● Predicted class
+The context will initially include Prediction confidence, Classification loss , Attention outside the anatomical region , Model uncertainty , Predicted class
 
 The contextual bandit will choose from several possible actions representing different levels of
-attention guidance:
-● No regularization
-● Low regularization
-● Medium regularization
-● High regularization
+attention guidance.For instance: No regularization , Low regularization , Medium regularization , High regularization
 
 The selected action will determine the value of k in the total loss:
 Total loss = Classification loss + k * Attention loss
