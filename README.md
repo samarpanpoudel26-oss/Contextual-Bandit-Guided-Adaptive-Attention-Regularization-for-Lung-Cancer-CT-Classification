@@ -20,7 +20,7 @@ attention guidance.For instance: No regularization , Low regularization , Medium
 
 The selected action will determine the value of k in the total loss:  
 
-Total loss = Classification loss + k * Attention loss   
+### Total loss = Classification loss + k * Attention loss   
 
 where k is selected adaptively by the contextual bandit.
 
